@@ -1,0 +1,129 @@
+/*****************************************  Navbar   ********************************************/
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(226, 213, 213);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px !important;
+}
+
+.navLogo {
+  width: 70px;
+  height: auto;
+  margin-right: 15px;
+}
+
+
+
+/*****************************************  CurrencyInput   ********************************************/
+
+.converter {
+  position: relative; /* Ensure the container is positioned relatively */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url('../src/Assets/Images/currencyBackground5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 95vh;
+}
+
+.converter::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../src/Assets/Images/currencyBackground5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(8px); /* Adjust the blur radius as needed */
+}
+
+.main {
+  margin-bottom: 50px !important;
+  color: whitesmoke !important;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.currencyLogo {
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(20px);
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+}
+
+
+.container>div {
+  flex: 1;
+  padding: 10px;
+}
+
+.left,
+.middle,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.result {
+  text-align: center;
+}
+
+h4,
+h5 {
+  margin: 5px 0;
+  color: whitesmoke !important;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+}
+
+
+/*****************************************  Info   ********************************************/
+
+.info {
+  margin-bottom: 50px !important;
+  margin-top: 50px !important;
+  color: rgb(0, 0, 0) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.info-container {
+  text-align: center; /* Center align the text */
+}
+
